@@ -1,0 +1,23 @@
+/* Pagination.module.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .pagination span {
+    margin: 0 10px;
+  }
+  

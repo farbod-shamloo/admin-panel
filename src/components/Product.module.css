@@ -1,0 +1,330 @@
+.container{
+    margin-top: 40px;
+    width: 1140px;
+    padding: 0 10px;
+}
+
+.container .add_product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container .add_product div{
+    display: flex;
+    align-items: center;
+}
+
+.container .add_product div svg{
+    font-size: 24px;
+}
+
+.container p{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #282828;
+    padding: 0 10px;
+}
+
+.container .add_product button{
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    background-color: #55A3F0;
+    padding: 10px;
+    border: none;
+}
+
+.container .add_product button:hover{
+    opacity: 0.8;
+}
+
+.table-container {
+    background-color: #fff;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid #E4E4E4;
+  }
+
+  thead th {
+    background-color: #f2f2f2;
+    padding: 15px;
+    font-weight: 500;
+    color: #000;
+    height: 70px;
+  }
+
+  tbody td {
+    padding: 5px 0;
+    color: #282828;
+    border-bottom: 1px solid #F2F2F2;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+   
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .actions button {
+    border: none;
+    padding: 8px 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    background-color: #fff;
+    border: none;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(3px); /* مقدار بلور */
+    -webkit-backdrop-filter: blur(3px); /* پشتیبانی از مرورگرهای قدیمی‌تر */
+  }
+  
+.modal_content {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 472px;
+  height: 338px;
+
+}
+
+  .modal_content img{
+    width: 90px;
+    margin-top: 30px;
+  }
+
+  .modal_content p{
+    margin-top: 35px;
+  }
+  
+  .modal_actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .modal_actions button {
+    padding: 10px 20px;
+    border: none;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 160px;
+    height: 41px;
+    margin-top: 20px;
+  }
+
+  
+  .modal_actions button:first-child {
+    background-color: #F43F5E;
+    color: white;
+  }
+  
+  .modal_actions button:last-child {
+    background-color: #DFDFDF;
+    color: #282828;
+  }
+  
+
+  /* edit modal  */
+
+  .modal_edit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(3px); 
+  }
+  
+  .modal_edit_content {
+    background: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .modal_edit_content h3 {
+    margin-bottom: 20px;
+  }
+  
+  .modal_edit_content label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+  .modal_edit_content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+  }
+  
+  .modal_edit_actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal_edit_actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .modal_edit_actions button:first-child {
+    background-color: #55A3F0;
+    color: white;
+    width: 185px;
+    height: 42px;
+    border-radius: 10px;
+  }
+  
+  .modal_edit_actions button:last-child {
+    background-color: #DFDFDF;
+    color: #282828;
+    width: 185px;
+    height: 42px;
+    border-radius: 10px;
+  }
+  
+  /* add   */
+
+  .modal_add {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(3px); 
+  }
+  
+  .modal_add_content {
+    background: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .modal_add h3 {
+    margin-bottom: 20px;
+  }
+  
+  .modal_add label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+  .modal_add input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+  }
+
+  .modal_add_actions{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal_add_actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+
+  .modal_add_cancel button {
+    background-color: #55A3F0;
+    color: white;
+    width: 185px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+  .modal_add_actions button:first-child {
+    background-color: #55A3F0;
+    color: white;
+    width: 185px;
+    height: 42px;
+    border-radius: 10px;
+  }
+  
+  .modal_add_actions button:last-child {
+    background-color: #DFDFDF;
+    color: #282828;
+    width: 185px;
+    height: 42px;
+    border-radius: 10px;
+  }

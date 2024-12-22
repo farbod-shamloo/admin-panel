@@ -1,0 +1,43 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+
+@font-face {
+  font-family: vazirNormal;
+  src: url('./fonts/vaizr.eot');
+  src: url('./fonts/vazir.eot?#iefix') format('embedded-opentype'), url('./fonts/vazir.woff2') format('woff2'), url('./fonts/vazir.woff') format('woff'), url('./fonts/vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: vazirBold;
+  src: url('./fonts/vazir-bold.eot');
+  src: url('./fonts/vazir-bold.eot?#iefix') format('embedded-opentype'), url('./fonts/vazir-bold.woff2') format('woff2'), url('./fonts/vazir-bold.woff') format('woff'), url('./fonts/vazir-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+
+body {
+  margin: auto;
+  max-width: 1140px;
+  min-height: 100vh;
+  direction: rtl;
+  background-color: #f7f7f7;
+ 
+ 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "vazirNormal";
+}
+
+
