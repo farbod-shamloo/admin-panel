@@ -1,6 +1,6 @@
 // Pagination.js
 import React from "react";
-import styles from "./Pagination.module.css"; // اگر استایل جداگانه نیاز دارید
+import styles from "./Pagination.module.css"; 
 
 function Pagination({ currentPage, totalPages, onPageChange }) {
   const handleNextPage = () => {
