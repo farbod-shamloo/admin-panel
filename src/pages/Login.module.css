@@ -91,3 +91,11 @@
     padding: 10px;
     color: #fff;
 }
+
+.login_loading{
+    background-color: #4caf50;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    color: #fff;;
+}

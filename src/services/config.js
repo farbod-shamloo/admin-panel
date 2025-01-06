@@ -3,7 +3,7 @@ import axios from "axios";
 // آدرس بیس API
 export const BASE_URL = "http://localhost:3000";
 
-localStorage.setItem("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3MzQ3OTk2NjY1MjMiLCJ1c2VybmFtZSI6ImZhcmJvZCIsImlhdCI6MTczNDg5MDEyNCwiZXhwIjoxNzM0ODkzNzI0fQ.qtY0VdOl_gnrwXu4tnSt7cFfEahdUPlS8pFDZ4sDbjc");
+localStorage.setItem("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3MzQ3OTk2NjY1MjMiLCJ1c2VybmFtZSI6ImZhcmJvZCIsImlhdCI6MTczNjE1NDUzNywiZXhwIjoxNzM2MTU4MTM3fQ.82Sob_DaQmmlqGoZxu2KijThNUm3O_2tonh3Y_WJeDw");
 
 // گرفتن توکن
 export const token = localStorage.getItem("token");

@@ -50,12 +50,13 @@ function Products() {
 
   const navigate = useNavigate();
   const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
   const [error, setError] = useState("");
   const [showEditModal, setShowEditModal] = useState(false);
   const [showAddModal, setShowAddModal] = useState(false); // مدال افزودن
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [username, setUsername] = useState("");
-  console.log(username)
+  console.log(username);
   const [editData, setEditData] = useState({
     id: "",
     name: "",
@@ -182,7 +183,7 @@ function Products() {
     } else {
       setUsername(storedUsername); // اگر موجود بود، username را در استیت ذخیره می‌کنیم
     }
-  }, [navigate]);
+  }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -248,8 +249,6 @@ function Products() {
             </tbody>
           </table>
         </div>
-
-        
 
         {/* مدال حذف */}
         {showDeleteModal && (
@@ -346,7 +345,9 @@ function Products() {
         )}
       </div>
 
-      <button onClick={handleLogout}>خروج</button>
+      <button className={styles.exit} onClick={handleLogout}>
+        خروج
+      </button>
     </>
   );
 }

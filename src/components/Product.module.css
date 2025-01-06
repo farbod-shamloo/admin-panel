@@ -328,3 +328,19 @@
     height: 42px;
     border-radius: 10px;
   }
+
+  .exit{
+    margin: 15px;
+    width: 160px;
+    height: 48px;
+    border: none;
+    background-color: #F43F5E;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .exit:hover{
+    opacity: 0.8;
+  }
